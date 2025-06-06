@@ -1,5 +1,3 @@
 @import url(global.css);
 
-footer {
-    padding: 0;
-}
+@import url(nav.css);
