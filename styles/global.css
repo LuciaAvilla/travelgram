@@ -13,10 +13,10 @@
     --text-color-primary: #313131;
     --text-color-secondary: #6C6C6C;
     --font-family: "Poppins", sans-serif;
-    --text: 16px/150% var(--font-family);
-    --text-lg: bold 32px/125% var(--font-family);
-    --text-md: 14px/170% var(--font-family);
-    --text-sm: 12px/170% var(--font-family)
+    --text: 1rem/150% var(--font-family);
+    --text-lg: bold 2rem/125% var(--font-family);
+    --text-md: .875rem/170% var(--font-family);
+    --text-sm: .75rem/170% var(--font-family);
 }
 
 body {
@@ -36,12 +36,35 @@ a:hover {
 }
 
 .container {
-    padding-inline: 32px;
-    max-width: 1280px;
+    padding-inline: 2rem;
+    max-width: 80rem;
     margin-inline: auto;
 
 }
 
 .bg-surface-color {
     background-color: var(--surface-color);
+}
+
+@media (width <=30em) {
+    :root {
+        --text-lg: bold 1.5rem/125% var(--font-family);
+    }
+
+    #logo {
+        justify-self: start;
+    }
+
+    .container {
+        max-width: 29.5rem;
+        margin-inline: auto;
+        padding-inline: 1rem;
+
+    }
+
+    .bg-surface-color {
+        background-color: var(--surface-color);
+        width: auto;
+        height: auto;
+    }
 }
