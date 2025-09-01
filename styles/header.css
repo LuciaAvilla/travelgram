@@ -52,7 +52,6 @@ header .container {
     }
 
     header .container {
-        border: 1px solid red;
         padding-block: inherit;
         padding: 2rem;
         display: flex;
