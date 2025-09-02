@@ -1,14 +1,31 @@
 main {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    padding-block: 24px;
+    gap: 1.5rem;
+
 }
 
 main img {
     width: 286px;
     height: 286px;
     object-fit: cover;
+}
 
 
+@media (width <=30em) {
+
+    main {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }

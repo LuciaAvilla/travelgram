@@ -1,11 +1,40 @@
 footer {
     display: flex;
-    gap: 24px;
-    padding-block: 24px;
-    font: 14px/150% var(--font-family)
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+    font: .875rem/150% var(--font-family);
 }
 
 
 footer span:nth-child(1) {
     margin-right: auto;
+}
+
+@media (width <=30em) {
+    footer {
+        /* border: 1px solid magenta; */
+        display: grid;
+        /* grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto; */
+        gap: 1.25rem;
+
+    }
+
+    .container span:first-child {
+        /* border: 1px solid blueviolet; */
+        grid-column: span 2;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .container span:nth-child(2) {
+        /* border: 1px solid red; */
+        text-align: right;
+    }
+
+    .container span:nth-child(3) {
+        /* border: 1px solid green; */
+        text-align: left;
+        white-space: nowrap;
+    }
 }
