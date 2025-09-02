@@ -41,3 +41,9 @@ Clique duas vezes no arquivo para abrir no navegador
 OU
 
 Use a extensão Live Server no VS Code para rodar o projeto localmente
+
+ ---
+ 
+## 📌 Melhorias recentes
+
+- Adição de media queries para responsividade em dispositivos móveis
